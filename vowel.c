@@ -11,5 +11,5 @@ u=(c=='A'||c=='E'||c=='I'||c=='O'||c=='u');
 if(l||u)
 printf("%c is  a vowel",c);
 else
-pritnf("%c is a consonent",c);
+printf("%c is a consonent",c);
 return 0;}
