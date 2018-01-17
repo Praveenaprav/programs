@@ -3,12 +3,12 @@
 int main()
 {
 char c;
-int isLowercaseVowel,isUppercaseVowel;
+int l,u;
 printf("enter an alphabet:");
 scanf("%c",&c);
-isLowercaseVowel=(c=='a'||c=='e'||c=='i'||c='o'||c='u');
-isUppercaseVowel=(c=='A'||c=='E'||c=='I'||c=='O'||c=='u');
-if(isLowercaseVowel||isUppercaseVowel)
+l=(c=='a'||c=='e'||c=='i'||c='o'||c='u');
+u=(c=='A'||c=='E'||c=='I'||c=='O'||c=='u');
+if(l||u)
 printf("%c is  a vowel",c);
 else
 pritnf("%c is a consonent",c);
