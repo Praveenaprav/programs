@@ -2,10 +2,10 @@
 #include<stdio.h>
 int main()
 {
-char n,c;
+char c;
 int isLowercaseVowel,isUppercaseVowel;
 printf("enter an alphabet:");
-scanf("%c",&n);
+scanf("%c",&c);
 isLowercaseVowel=(c=='a'||c=='e'||c=='i'||c='o'||c='u');
 isUppercaseVowel=(c=='A'||c=='E'||c=='I'||c=='O'||c=='u');
 if(isLowercaseVowel||isUppercaseVowel)
