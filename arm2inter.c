@@ -3,40 +3,33 @@
 
 int main()
 {
-    int low, high, i, temp1, temp2, remainder, n = 0, result = 0;
+    int l, h, i, t1, t2, remainder, n = 0, res = 0;
 
     printf("Enter two numbers(intervals): ");
-    scanf("%d %d", &low, &high);
-    printf("Armstrong numbers between %d an %d are: ", low, high);
+    scanf("%d %d", &l, &h);
+    printf("Armstrong numbers between %d an %d are: ", l, h);
 
-    for(i = low + 1; i < high; ++i)
+    for(i = l + 1; i < h; ++i)
     {
-        temp2 = i;
-        temp1 = i;
+        t2 = i;
+        t1 = i;
 
-        // number of digits calculation
-        while (temp1 != 0)
+        while (t1 != 0)
         {
-            temp1 /= 10;
+            t1 /= 10;
             ++n;
         }
-
-        // result contains sum of nth power of its digits
-        while (temp2 != 0)
+        while (t2 != 0)
         {
-            remainder = temp2 % 10;
-            result += pow(remainder, n);
-            temp2 /= 10;
+            remainder = t2 % 10;
+            res += pow(remainder, n);
+            t2/= 10;
         }
-
-        // checks if number i is equal to the sum of nth power of its digits
-        if (result == i) {
+        if (res == i) {
             printf("%d ", i);
         }
-
-        // resetting the values to check Armstrong number for next iteration
         n = 0;
-        result = 0;
+        res= 0;
 
     }
     return 0;
