@@ -2,7 +2,7 @@
 #include<stdio.h>
 int main()
 {
-char n;
+char n,c;
 int isLowercaseVowel,isUppercaseVowel;
 printf("enter an alphabet:");
 scanf("%c",&n);
