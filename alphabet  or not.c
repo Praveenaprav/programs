@@ -9,3 +9,4 @@ printf("%c is an alphabet,n");
 else
 printf("%c is not an alphabet,n");
 return 0;
+}
