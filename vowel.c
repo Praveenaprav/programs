@@ -3,10 +3,6 @@
 int main()
 {
 char n;
-int isLowercaseVowel,isUppercaseVowel;#include<stdio.h>
-int main()
-{
-char n;
 int isLowercaseVowel,isUppercaseVowel;
 printf("enter an alphabet:");
 scanf("%c",&n);
@@ -16,4 +12,4 @@ if(isLowercaseVowel||isUppercaseVowel)
 printf("%c is  a vowel",n);
 else
 pritnf("%c is a consonent",n);
-return 0;
+return 0;}
