@@ -1,16 +1,23 @@
-#include<stdio.h> 
+
+#include <stdio.h>
 int main()
 {
- int m,n,rem,i;
- printf("First Range:\n");
- scanf("%d",&m);
- printf("Final Range:\n");
- scanf("%d",&n);
- printf("\n The Even numbers between the given interval  %d and%d are",m,n); 
- for(i=m;i<=n;++i)
-{
- rem=i%2;
- if(rem==0)
- printf("\n %d",i);
- return 0; 
- }}
+    int l, h,i,t;
+    printf("Enter two intervals:");
+    scanf("%d %d",&l,&h);
+ printf("Prime numbers between %d and %d are: ",l,h);
+while(l<h)
+{t=0;
+ for(i=2;i<=l/2;++i)
+ {
+     if(l%i==0)       
+      {
+t=1;
+break;
+}}
+if(t==0)
+printf("%d",l);
+++l;      
+ }
+return 0;
+}
