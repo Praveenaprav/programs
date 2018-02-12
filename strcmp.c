@@ -12,7 +12,7 @@ l1=strlen(str1);
 l2=strlen(str2);
 if(l1==l2)
 {
-printf("\n :%s",str2);
+printf("\n :%s%s",str1,str2);
 }
 else
 {
