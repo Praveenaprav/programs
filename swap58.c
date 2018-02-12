@@ -2,13 +2,10 @@
 int main()
 {
 int i,j;
-printf("\n enter the i value:");
-scanf("%d",&i);
-printf("\n enter the j value:");
-scanf("%d",&j);
+scanf("%d %d",&i,&j);
 i=i^j;
 j=i^j;
 i=i^j;
-printf("\n after swapping :%d %d",i,j);
+printf("\n swapped values are:%d %d",i,j);
 return 0;
 }
