@@ -1,9 +1,9 @@
 #include<stdio.h>
 int main()
 {
-int a,b,c;
-scanf("%d %d",&a,&b);
-c=a*b;
+int m,n,c;
+scanf("%d %d",&m,&n);
+c=m*n;
 printf("\n",c);
 if(c%2==0)
 printf("\n multiplication is even");
