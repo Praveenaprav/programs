@@ -1,12 +1,12 @@
 #include<stdio.h>
 int main()
 {
-int a,b,c;
-scanf("%d %d",&a,&b);
-c=a+b;
+int n,m,c;
+scanf("%d %d",&n,&m);
+c=n+m;
 if(c%2==0)
 printf("addition is even");
 else
-printf("addition id odd");
+printf("addition is odd");
 return 0;
 }
