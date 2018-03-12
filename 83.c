@@ -7,15 +7,15 @@ int main()
 	scanf("%d %c %d",&a,&op,&b);
 	switch(op)
 	{
-		case '%':
+        case '%':
 		c=a%b;
 		printf("\n %d",c);
 		break;
-		case '/':
+        case '/':
 		c=a/b;
 		printf("%d",c);
 		break;
-		default:
+	default:
 		printf("");
 	}return 0;
 }
